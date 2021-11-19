@@ -1,1 +1,1 @@
-"# is2" 
+Práctica IS2
