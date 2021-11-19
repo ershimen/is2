@@ -1,0 +1,36 @@
+[2021/11/17-22:34:40]: Starting database...
+[2021/11/17-22:34:40]: Starting server...
+[2021/11/17-22:34:40]: Initializing socket...
+[2021/11/17-22:34:40]: Socket initialized.
+[2021/11/17-22:34:40]: Server started. Listening...
+[2021/11/17-22:34:49]: New message from 127.0.0.1:65268, type=login
+[2021/11/17-22:34:49]: Logged as "user1".
+[2021/11/17-22:34:58]: New message from 127.0.0.1:65269, type=viaje
+[2021/11/17-22:34:58]: Taxi "taxi_58" is now reserved (11/17/21-22:34).
+[2021/11/17-22:35:13]: New message from 127.0.0.1:65270, type=login
+[2021/11/17-22:35:13]: Logged as "admin".
+[2021/11/17-22:35:14]: New message from 127.0.0.1:65271, type=list_taxi
+[2021/11/17-22:35:14]: New message from 127.0.0.1:65272, type=get_status
+[2021/11/17-22:35:16]: New message from 127.0.0.1:65273, type=status_update
+[2021/11/17-22:35:16]: Admin completed a petition (taxi_58): reject
+[2021/11/17-22:35:16]: New message from 127.0.0.1:65274, type=get_status
+[2021/11/17-22:35:20]: New message from 127.0.0.1:65275, type=status
+[2021/11/17-22:35:20]: Asking for petition status (taxi_58)
+[2021/11/17-22:35:20]: Taxi petition completed (taxi_58) -> reject
+[2021/11/17-22:35:29]: New message from 127.0.0.1:65276, type=viaje
+[2021/11/17-22:35:29]: Taxi "taxi_58" is now reserved (11/17/21-22:34).
+[2021/11/17-22:35:34]: New message from 127.0.0.1:65277, type=status
+[2021/11/17-22:35:34]: Asking for petition status (taxi_58)
+[2021/11/17-22:35:36]: New message from 127.0.0.1:65278, type=get_status
+[2021/11/17-22:35:37]: New message from 127.0.0.1:65279, type=status_update
+[2021/11/17-22:35:37]: Admin completed a petition (taxi_58): reject
+[2021/11/17-22:35:37]: New message from 127.0.0.1:65280, type=get_status
+[2021/11/17-22:35:39]: New message from 127.0.0.1:65281, type=status
+[2021/11/17-22:35:39]: Asking for petition status (taxi_58)
+[2021/11/17-22:35:39]: Taxi petition completed (taxi_58) -> reject
+[2021/11/17-22:35:41]: New message from 127.0.0.1:65282, type=stop
+[2021/11/17-22:35:41]: Stopping server...
+[2021/11/17-22:35:41]: Closing socket...
+[2021/11/17-22:35:41]: Saving database...
+[2021/11/17-22:35:41]: Closing files...
+[2021/11/17-22:35:41]: Server stopped.

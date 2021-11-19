@@ -1,0 +1,39 @@
+[2021/11/17-22:10:49]: Starting database...
+[2021/11/17-22:10:49]: Starting server...
+[2021/11/17-22:10:49]: Initializing socket...
+[2021/11/17-22:10:49]: Socket initialized.
+[2021/11/17-22:10:49]: Server started. Listening...
+[2021/11/17-22:14:54]: New message from 127.0.0.1:51143, type=login
+[2021/11/17-22:14:54]: Logged as "admin".
+[2021/11/17-22:15:01]: New message from 127.0.0.1:51144, type=list_taxi
+[2021/11/17-22:15:01]: New message from 127.0.0.1:51145, type=get_status
+[2021/11/17-22:15:03]: New message from 127.0.0.1:51146, type=login
+[2021/11/17-22:15:03]: Logged as "user1".
+[2021/11/17-22:15:26]: New message from 127.0.0.1:51147, type=get_status
+[2021/11/17-22:15:27]: New message from 127.0.0.1:51148, type=list_taxi
+[2021/11/17-22:15:28]: New message from 127.0.0.1:51149, type=viaje
+[2021/11/17-22:15:28]: Taxi "taxi_31" is now reserved (11/18/21-22:30).
+[2021/11/17-22:15:47]: New message from 127.0.0.1:51150, type=list_taxi
+[2021/11/17-22:15:53]: New message from 127.0.0.1:51151, type=get_status
+[2021/11/17-22:16:05]: New message from 127.0.0.1:51152, type=status
+[2021/11/17-22:16:05]: Asking for petition status (taxi_31)
+[2021/11/17-22:16:06]: New message from 127.0.0.1:51153, type=status
+[2021/11/17-22:16:06]: Asking for petition status (taxi_31)
+[2021/11/17-22:16:07]: New message from 127.0.0.1:51154, type=status
+[2021/11/17-22:16:07]: Asking for petition status (taxi_31)
+[2021/11/17-22:16:07]: New message from 127.0.0.1:51155, type=status
+[2021/11/17-22:16:07]: Asking for petition status (taxi_31)
+[2021/11/17-22:17:11]: New message from 127.0.0.1:51157, type=status_update
+[2021/11/17-22:17:11]: Admin completed a petition (taxi_31): reject
+[2021/11/17-22:17:11]: New message from 127.0.0.1:51158, type=get_status
+[2021/11/17-22:17:14]: New message from 127.0.0.1:51159, type=status
+[2021/11/17-22:17:14]: Asking for petition status (taxi_31)
+[2021/11/17-22:17:14]: Taxi petition completed (taxi_31) -> reject
+[2021/11/17-22:17:19]: New message from 127.0.0.1:51160, type=get_status
+[2021/11/17-22:17:20]: New message from 127.0.0.1:51161, type=list_taxi
+[2021/11/17-22:17:27]: New message from 127.0.0.1:51162, type=stop
+[2021/11/17-22:17:27]: Stopping server...
+[2021/11/17-22:17:27]: Closing socket...
+[2021/11/17-22:17:27]: Saving database...
+[2021/11/17-22:17:27]: Closing files...
+[2021/11/17-22:17:27]: Server stopped.

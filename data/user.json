@@ -1,0 +1,17 @@
+{
+    "admin": {
+        "pwd": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918"
+    },
+    "user1": {
+        "pwd": "0a041b9462caa4a31bac3567e0b6e6fd9100787db2ab433d96f6d178cabfce90",
+        "nombre": "paco",
+        "tlf": "+34123456789",
+        "pago": "5120-2511-5666-6112"
+    },
+    "xd@sppp.com": {
+        "nombre": "tremendo",
+        "tlf": "1666122",
+        "pago": "000-1-1111-5311",
+        "pwd": "5b21ffb8a4898381b9f4acd11fe2cb52e483b194a636b7bbf34cf6fc8563ebf9"
+    }
+}

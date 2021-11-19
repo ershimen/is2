@@ -1,0 +1,502 @@
+{
+    "taxi_0": {
+        "latitude": 40.21465318958678,
+        "longitude": -3.9111906823940723,
+        "status": "libre"
+    },
+    "taxi_1": {
+        "latitude": 40.59155044088502,
+        "longitude": -3.5732968759708976,
+        "status": "ocupado"
+    },
+    "taxi_2": {
+        "latitude": 40.176025026987375,
+        "longitude": -3.9422678594922975,
+        "status": "ocupado"
+    },
+    "taxi_3": {
+        "latitude": 40.89684762959817,
+        "longitude": -3.7718771991709477,
+        "status": "ocupado"
+    },
+    "taxi_4": {
+        "latitude": 40.358911355033776,
+        "longitude": -4.0215545084555435,
+        "status": "ocupado"
+    },
+    "taxi_5": {
+        "latitude": 40.6284221437227,
+        "longitude": -4.319416315749263,
+        "status": "libre"
+    },
+    "taxi_6": {
+        "latitude": 40.166909675036884,
+        "longitude": -3.858499858064519,
+        "status": "libre"
+    },
+    "taxi_7": {
+        "latitude": 40.68088956633717,
+        "longitude": -4.429496177550655,
+        "status": "libre"
+    },
+    "taxi_8": {
+        "latitude": 40.20624414281453,
+        "longitude": -3.7166624327336515,
+        "status": "ocupado"
+    },
+    "taxi_9": {
+        "latitude": 40.6954285468896,
+        "longitude": -3.9250534877239067,
+        "status": "ocupado"
+    },
+    "taxi_10": {
+        "latitude": 40.15812882938216,
+        "longitude": -4.386012898049119,
+        "status": "libre"
+    },
+    "taxi_11": {
+        "latitude": 40.56846657493193,
+        "longitude": -3.726738674498036,
+        "status": "libre"
+    },
+    "taxi_12": {
+        "latitude": 40.70450657874242,
+        "longitude": -4.297593217760552,
+        "status": "libre"
+    },
+    "taxi_13": {
+        "latitude": 40.36122009427589,
+        "longitude": -3.568348717878006,
+        "status": "ocupado"
+    },
+    "taxi_14": {
+        "latitude": 40.60023030304931,
+        "longitude": -3.899698411658593,
+        "status": "ocupado"
+    },
+    "taxi_15": {
+        "latitude": 40.584865920739716,
+        "longitude": -4.183081305974814,
+        "status": "libre"
+    },
+    "taxi_16": {
+        "latitude": 40.85241401860242,
+        "longitude": -4.39551788338325,
+        "status": "libre"
+    },
+    "taxi_17": {
+        "latitude": 40.51852734684451,
+        "longitude": -4.440546557077463,
+        "status": "libre"
+    },
+    "taxi_18": {
+        "latitude": 40.52371322999017,
+        "longitude": -3.8639144051132948,
+        "status": "libre"
+    },
+    "taxi_19": {
+        "latitude": 40.63012821544979,
+        "longitude": -3.787408112920348,
+        "status": "libre"
+    },
+    "taxi_20": {
+        "latitude": 40.743580734117266,
+        "longitude": -3.6152042089715835,
+        "status": "ocupado"
+    },
+    "taxi_21": {
+        "latitude": 40.813372795794066,
+        "longitude": -3.6018091937578793,
+        "status": "ocupado"
+    },
+    "taxi_22": {
+        "latitude": 40.85981061768468,
+        "longitude": -3.6232978478037348,
+        "status": "ocupado"
+    },
+    "taxi_23": {
+        "latitude": 40.43371953660372,
+        "longitude": -4.443498072368547,
+        "status": "ocupado"
+    },
+    "taxi_24": {
+        "latitude": 40.73751393397629,
+        "longitude": -3.5075243645594467,
+        "status": "libre"
+    },
+    "taxi_25": {
+        "latitude": 40.68311413301511,
+        "longitude": -3.5060192996755655,
+        "status": "ocupado"
+    },
+    "taxi_26": {
+        "latitude": 40.70074197155981,
+        "longitude": -3.7005772301305306,
+        "status": "libre"
+    },
+    "taxi_27": {
+        "latitude": 40.33976183782584,
+        "longitude": -3.547209899847375,
+        "status": "ocupado"
+    },
+    "taxi_28": {
+        "latitude": 40.63161033340947,
+        "longitude": -4.4561849170623615,
+        "status": "ocupado"
+    },
+    "taxi_29": {
+        "latitude": 40.607982258795765,
+        "longitude": -4.332074668494,
+        "status": "libre"
+    },
+    "taxi_30": {
+        "latitude": 40.27419080647339,
+        "longitude": -3.5241328482435077,
+        "status": "ocupado"
+    },
+    "taxi_31": {
+        "latitude": 40.24922850726393,
+        "longitude": -3.8496856739202614,
+        "status": "ocupado"
+    },
+    "taxi_32": {
+        "latitude": 40.294245252314795,
+        "longitude": -3.9561003313057075,
+        "status": "libre"
+    },
+    "taxi_33": {
+        "latitude": 40.41586227556165,
+        "longitude": -3.6304547938097174,
+        "status": "ocupado"
+    },
+    "taxi_34": {
+        "latitude": 40.37788780290193,
+        "longitude": -4.376402182610262,
+        "status": "ocupado"
+    },
+    "taxi_35": {
+        "latitude": 40.38000468516015,
+        "longitude": -3.9859469128235636,
+        "status": "ocupado"
+    },
+    "taxi_36": {
+        "latitude": 40.362360107735725,
+        "longitude": -3.5140476569736148,
+        "status": "ocupado"
+    },
+    "taxi_37": {
+        "latitude": 40.7471385143775,
+        "longitude": -4.1732193760115655,
+        "status": "libre"
+    },
+    "taxi_38": {
+        "latitude": 40.723675731245315,
+        "longitude": -3.9618108202181683,
+        "status": "ocupado"
+    },
+    "taxi_39": {
+        "latitude": 40.79345777416937,
+        "longitude": -4.419639319499881,
+        "status": "ocupado"
+    },
+    "taxi_40": {
+        "latitude": 40.51274816788192,
+        "longitude": -3.7286525515127433,
+        "status": "ocupado"
+    },
+    "taxi_41": {
+        "latitude": 40.76094550795668,
+        "longitude": -3.9369663426759693,
+        "status": "libre"
+    },
+    "taxi_42": {
+        "latitude": 40.79426507731664,
+        "longitude": -3.846510943884142,
+        "status": "ocupado"
+    },
+    "taxi_43": {
+        "latitude": 40.20282784655279,
+        "longitude": -4.203713992007162,
+        "status": "libre"
+    },
+    "taxi_44": {
+        "latitude": 40.753831601291196,
+        "longitude": -4.157767330881623,
+        "status": "ocupado"
+    },
+    "taxi_45": {
+        "latitude": 40.746947445100204,
+        "longitude": -3.682229939319598,
+        "status": "ocupado"
+    },
+    "taxi_46": {
+        "latitude": 40.72762319911777,
+        "longitude": -3.880376807366332,
+        "status": "ocupado"
+    },
+    "taxi_47": {
+        "latitude": 40.57042962791219,
+        "longitude": -4.241014205287958,
+        "status": "libre"
+    },
+    "taxi_48": {
+        "latitude": 40.74996294382737,
+        "longitude": -4.259220988953857,
+        "status": "ocupado"
+    },
+    "taxi_49": {
+        "latitude": 40.38928215647864,
+        "longitude": -4.408560271650301,
+        "status": "ocupado"
+    },
+    "taxi_50": {
+        "latitude": 40.537771588593166,
+        "longitude": -3.6397778059344335,
+        "status": "ocupado"
+    },
+    "taxi_51": {
+        "latitude": 40.676032485734645,
+        "longitude": -4.272518232798639,
+        "status": "ocupado"
+    },
+    "taxi_52": {
+        "latitude": 40.243492982463046,
+        "longitude": -4.14124508308695,
+        "status": "ocupado"
+    },
+    "taxi_53": {
+        "latitude": 40.580783479307,
+        "longitude": -3.6234975498110713,
+        "status": "libre"
+    },
+    "taxi_54": {
+        "latitude": 40.61933049037519,
+        "longitude": -4.390466421402512,
+        "status": "ocupado"
+    },
+    "taxi_55": {
+        "latitude": 40.787137242596884,
+        "longitude": -3.5228289899659533,
+        "status": "ocupado"
+    },
+    "taxi_56": {
+        "latitude": 40.55750629385702,
+        "longitude": -3.6369476937136147,
+        "status": "libre"
+    },
+    "taxi_57": {
+        "latitude": 40.84172408974591,
+        "longitude": -3.6390431427517216,
+        "status": "ocupado"
+    },
+    "taxi_58": {
+        "latitude": 40.147650497237166,
+        "longitude": -3.8183472288671423,
+        "status": "ocupado"
+    },
+    "taxi_59": {
+        "latitude": 40.22163631045115,
+        "longitude": -4.290993152792762,
+        "status": "ocupado"
+    },
+    "taxi_60": {
+        "latitude": 40.19209469135027,
+        "longitude": -4.030686524372503,
+        "status": "ocupado"
+    },
+    "taxi_61": {
+        "latitude": 40.47095158866313,
+        "longitude": -3.70772125441413,
+        "status": "ocupado"
+    },
+    "taxi_62": {
+        "latitude": 40.76716694326298,
+        "longitude": -3.56041285403235,
+        "status": "ocupado"
+    },
+    "taxi_63": {
+        "latitude": 40.510292809063905,
+        "longitude": -3.846015763600038,
+        "status": "ocupado"
+    },
+    "taxi_64": {
+        "latitude": 40.503129891576016,
+        "longitude": -3.718878611053837,
+        "status": "ocupado"
+    },
+    "taxi_65": {
+        "latitude": 40.53402798754567,
+        "longitude": -3.8906197139799246,
+        "status": "libre"
+    },
+    "taxi_66": {
+        "latitude": 40.39521614696702,
+        "longitude": -4.384585451839628,
+        "status": "ocupado"
+    },
+    "taxi_67": {
+        "latitude": 40.2491797765757,
+        "longitude": -4.084282756945123,
+        "status": "ocupado"
+    },
+    "taxi_68": {
+        "latitude": 40.328060999199856,
+        "longitude": -3.86818140658703,
+        "status": "ocupado"
+    },
+    "taxi_69": {
+        "latitude": 40.64295131417665,
+        "longitude": -4.340367117345732,
+        "status": "libre"
+    },
+    "taxi_70": {
+        "latitude": 40.89901303131618,
+        "longitude": -3.8607814622907104,
+        "status": "ocupado"
+    },
+    "taxi_71": {
+        "latitude": 40.24994626679336,
+        "longitude": -3.5864204893981046,
+        "status": "ocupado"
+    },
+    "taxi_72": {
+        "latitude": 40.481246527618644,
+        "longitude": -3.7598934763576137,
+        "status": "ocupado"
+    },
+    "taxi_73": {
+        "latitude": 40.648523887809425,
+        "longitude": -3.8092341969839465,
+        "status": "ocupado"
+    },
+    "taxi_74": {
+        "latitude": 40.22333969110193,
+        "longitude": -3.8975029018316247,
+        "status": "ocupado"
+    },
+    "taxi_75": {
+        "latitude": 40.206717996020345,
+        "longitude": -3.5315236629535316,
+        "status": "ocupado"
+    },
+    "taxi_76": {
+        "latitude": 40.5378020430238,
+        "longitude": -3.819441278251515,
+        "status": "libre"
+    },
+    "taxi_77": {
+        "latitude": 40.86772937902184,
+        "longitude": -4.389647726113817,
+        "status": "libre"
+    },
+    "taxi_78": {
+        "latitude": 40.270593683152406,
+        "longitude": -3.5698872723729345,
+        "status": "ocupado"
+    },
+    "taxi_79": {
+        "latitude": 40.665823069109926,
+        "longitude": -4.377072524204949,
+        "status": "ocupado"
+    },
+    "taxi_80": {
+        "latitude": 40.12276743482448,
+        "longitude": -3.716023219169119,
+        "status": "ocupado"
+    },
+    "taxi_81": {
+        "latitude": 40.67434053158947,
+        "longitude": -4.128224256561099,
+        "status": "ocupado"
+    },
+    "taxi_82": {
+        "latitude": 40.38688250877237,
+        "longitude": -4.490072363007396,
+        "status": "ocupado"
+    },
+    "taxi_83": {
+        "latitude": 40.76721061421002,
+        "longitude": -3.953871622651875,
+        "status": "libre"
+    },
+    "taxi_84": {
+        "latitude": 40.55858964201611,
+        "longitude": -4.036456191273055,
+        "status": "ocupado"
+    },
+    "taxi_85": {
+        "latitude": 40.512159866673485,
+        "longitude": -3.666820221361026,
+        "status": "ocupado"
+    },
+    "taxi_86": {
+        "latitude": 40.24993111245661,
+        "longitude": -3.8794148511371107,
+        "status": "libre"
+    },
+    "taxi_87": {
+        "latitude": 40.77798107205283,
+        "longitude": -4.091181369947441,
+        "status": "libre"
+    },
+    "taxi_88": {
+        "latitude": 40.31213652376105,
+        "longitude": -3.952950882991829,
+        "status": "ocupado"
+    },
+    "taxi_89": {
+        "latitude": 40.603538193053325,
+        "longitude": -3.9104461191899818,
+        "status": "ocupado"
+    },
+    "taxi_90": {
+        "latitude": 40.28903598017354,
+        "longitude": -3.7069178125974958,
+        "status": "ocupado"
+    },
+    "taxi_91": {
+        "latitude": 40.38643482812126,
+        "longitude": -3.790720115120555,
+        "status": "ocupado"
+    },
+    "taxi_92": {
+        "latitude": 40.80357306003275,
+        "longitude": -3.9135572911192904,
+        "status": "libre"
+    },
+    "taxi_93": {
+        "latitude": 40.88233326120236,
+        "longitude": -4.363619167143659,
+        "status": "libre"
+    },
+    "taxi_94": {
+        "latitude": 40.847701791619244,
+        "longitude": -3.699458197549344,
+        "status": "ocupado"
+    },
+    "taxi_95": {
+        "latitude": 40.40225827896457,
+        "longitude": -3.8706536575563755,
+        "status": "ocupado"
+    },
+    "taxi_96": {
+        "latitude": 40.78430132206816,
+        "longitude": -3.599202089539807,
+        "status": "libre"
+    },
+    "taxi_97": {
+        "latitude": 40.26405278881944,
+        "longitude": -3.9154755896684335,
+        "status": "libre"
+    },
+    "taxi_98": {
+        "latitude": 40.719719428025385,
+        "longitude": -4.2463434241552545,
+        "status": "libre"
+    },
+    "taxi_99": {
+        "latitude": 40.70252346050777,
+        "longitude": -3.8654005238244924,
+        "status": "libre"
+    }
+}

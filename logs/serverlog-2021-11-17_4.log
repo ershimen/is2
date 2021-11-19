@@ -1,0 +1,43 @@
+[2021/11/17-22:24:08]: Starting database...
+[2021/11/17-22:24:08]: Starting server...
+[2021/11/17-22:24:08]: Initializing socket...
+[2021/11/17-22:24:08]: Socket initialized.
+[2021/11/17-22:24:08]: Server started. Listening...
+[2021/11/17-22:24:51]: New message from 127.0.0.1:65214, type=login
+[2021/11/17-22:24:51]: Logged as "user1".
+[2021/11/17-22:24:54]: New message from 127.0.0.1:65215, type=login
+[2021/11/17-22:24:54]: Logged as "admin".
+[2021/11/17-22:24:55]: New message from 127.0.0.1:65216, type=list_taxi
+[2021/11/17-22:24:55]: New message from 127.0.0.1:65217, type=get_status
+[2021/11/17-22:25:17]: New message from 127.0.0.1:65218, type=list_taxi
+[2021/11/17-22:25:23]: New message from 127.0.0.1:65219, type=get_status
+[2021/11/17-22:25:39]: New message from 127.0.0.1:65220, type=viaje
+[2021/11/17-22:25:39]: Taxi "taxi_31" is now reserved (11/18/21-22:30).
+[2021/11/17-22:25:50]: New message from 127.0.0.1:65221, type=status
+[2021/11/17-22:25:50]: Asking for petition status (taxi_31)
+[2021/11/17-22:26:12]: New message from 127.0.0.1:65222, type=list_taxi
+[2021/11/17-22:26:17]: New message from 127.0.0.1:65223, type=get_status
+[2021/11/17-22:26:40]: New message from 127.0.0.1:65224, type=status_update
+[2021/11/17-22:26:40]: Admin completed a petition (taxi_31): reject
+[2021/11/17-22:26:40]: New message from 127.0.0.1:65225, type=get_status
+[2021/11/17-22:26:44]: New message from 127.0.0.1:65226, type=list_taxi
+[2021/11/17-22:26:47]: New message from 127.0.0.1:65227, type=status
+[2021/11/17-22:26:47]: Asking for petition status (taxi_31)
+[2021/11/17-22:26:47]: Taxi petition completed (taxi_31) -> reject
+[2021/11/17-22:26:50]: New message from 127.0.0.1:65228, type=viaje
+[2021/11/17-22:26:50]: Taxi "taxi_31" is now reserved (11/18/21-22:30).
+[2021/11/17-22:26:55]: New message from 127.0.0.1:65229, type=list_taxi
+[2021/11/17-22:26:58]: New message from 127.0.0.1:65230, type=get_status
+[2021/11/17-22:26:59]: New message from 127.0.0.1:65231, type=status_update
+[2021/11/17-22:26:59]: Admin completed a petition (taxi_31): accept
+[2021/11/17-22:26:59]: New message from 127.0.0.1:65232, type=get_status
+[2021/11/17-22:27:00]: New message from 127.0.0.1:65233, type=status
+[2021/11/17-22:27:00]: Asking for petition status (taxi_31)
+[2021/11/17-22:27:00]: Taxi petition completed (taxi_31) -> accept
+[2021/11/17-22:27:07]: New message from 127.0.0.1:65234, type=list_taxi
+[2021/11/17-22:27:24]: New message from 127.0.0.1:65235, type=stop
+[2021/11/17-22:27:24]: Stopping server...
+[2021/11/17-22:27:24]: Closing socket...
+[2021/11/17-22:27:24]: Saving database...
+[2021/11/17-22:27:24]: Closing files...
+[2021/11/17-22:27:24]: Server stopped.
