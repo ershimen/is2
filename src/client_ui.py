@@ -162,12 +162,15 @@ def main():
             else:
                 response = send_msg(msg)
                 if response is not None:
-                    messagebox.showinfo("Información",
-                                            "Se ha registrado el usuario.")
-                    entry_user.delete(0, END)
-                    entry_user.insert(0, reg_ventana_entry_correo.get())
-                    entry_contrasena.delete(0, END)
-                    entry_contrasena.insert(0, reg_ventana_entry_pwd.get())
+                    if response["data"] == True:
+                        messagebox.showinfo("Información",
+                                                "Se ha registrado el usuario.")
+                        entry_user.delete(0, END)
+                        entry_user.insert(0, reg_ventana_entry_correo.get())
+                        entry_contrasena.delete(0, END)
+                        entry_contrasena.insert(0, reg_ventana_entry_pwd.get())
+                    else:
+                        messagebox.showinfo("Información", "El usuario ya existe.")
                 reg_ventana.destroy()
 
         reg_ventana_registro = Button(reg_ventana, text="Registrar",
