@@ -111,6 +111,14 @@ def main():
                                         "pwd": msg["pwd"]}
                 write_log(log_file, "Created user \"" + msg["mail"] + "\".")
                 response["data"] = True
+        # Modificacion de datos de usuario
+        elif msg["type"] == "cambio":
+            user[msg["mail"]] = {"nombre": msg["nombre"],
+                                    "tlf": msg["tlf"],
+                                    "pago": msg["pago"],
+                                    "pwd": msg["pwd"]}
+            write_log(log_file, "Modified user \"" + msg["mail"] + "\".")
+            response["data"] = True
         # Peticion listado de taxis
         elif msg["type"] == "list_taxi":
             # devolver listado de taxis

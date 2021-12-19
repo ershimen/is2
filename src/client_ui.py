@@ -24,6 +24,7 @@ SERVER_PORT = 1234
 # Send msg to SERVER_IP:SERVER_PORT
 def send_msg(msg, size=BUFFER_SIZE):
     result = None
+
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.connect((SERVER_IP, SERVER_PORT))
@@ -48,6 +49,7 @@ def main():
     root.title("AppTaxi")
     root.geometry("900x800")
     root.resizable(False, False)
+
     # App title label
     Label(root, text="App Taxi", font="Calibri 27 bold").place(x=380, y=60)
 
@@ -64,15 +66,18 @@ def main():
     #label username
     Label(canvas_login, text="Usuario:", font="Calibri 15 bold",
             bg="#dbdbdb").place(x=30, y=80)
+
     #label contraseña
     Label(canvas_login, text="Contraseña:", font="Calibri 15 bold",
             bg="#dbdbdb").place(x=30, y=150)
 
     usuario = None
     contrasena = None
+
     # entry Usuario
     entry_user = Entry(canvas_login, font="Calibri 15", exportselection=0)
     entry_user.place(x=145, y=80)
+
     # entry Contraseña
     entry_contrasena = Entry(canvas_login, font="Calibri 15", show="•",
                                 exportselection=0)
@@ -156,6 +161,7 @@ def main():
             msg["tlf"] = reg_ventana_entry_telf.get()
             msg["pago"] = reg_ventana_entry_pago.get()
             msg["pwd"] = sha256(reg_ventana_entry_pwd.get().encode()).hexdigest()
+
             if "" in msg.values():
                 messagebox.showerror("Error",
                                         "No se han rellenado todos los campos.")
@@ -198,8 +204,10 @@ def main():
                                         "Los credenciales se han validado. " \
                                         "Se ha iniciado sesión como administrador.")
                     boton_cerrar_server.place(x=670, y=755)
+
                     # Ventana app
                     canvas_login.destroy()
+
                     # Lista taxis
                     taxi_list_label = Label(root, text="Listado de taxis en funcionamiento:",
                                             font="Calibri 15 bold")
@@ -209,6 +217,7 @@ def main():
                                                 yscrollcommand=admin_taxi_listbox_scrollbar.set)
                     admin_taxi_listbox_scrollbar.place(x=840, y=150)
                     admin_taxi_listbox_scrollbar.config(command=admin_taxi_listbox.yview)
+
                     # Lista peticiones
                     petition_list_label = Label(root, text="Listado de peticiones:",
                                                 font="Calibri 15 bold")
@@ -219,6 +228,7 @@ def main():
                                                 yscrollcommand=admin_petition_listbox_scrollbar.set)
                     admin_petition_listbox_scrollbar.place(x=840, y=470)
                     admin_petition_listbox_scrollbar.config(command=admin_petition_listbox.yview)
+
                     # Datos lista taxis
                     msg = dict()
                     msg["type"] = "list_taxi"
@@ -228,6 +238,7 @@ def main():
                         for t in taxi_list:
                             admin_taxi_listbox.insert(END, t.ljust(40) +
                                                             taxi_list[t]["status"].rjust(40))
+
                     # Datos lista peticiones
                     msg = dict()
                     msg["type"] = "get_status"
@@ -244,6 +255,7 @@ def main():
                                                                  pet["price"],
                                                                  pet["date"],
                                                                  pet["hour"]))
+
                     def update_taxi_info():
                         msg = dict()
                         msg["type"] = "list_taxi"
@@ -255,6 +267,7 @@ def main():
                             for t in taxi_list:
                                 admin_taxi_listbox.insert(END, t.ljust(40) +
                                                                 taxi_list[t]["status"].rjust(40))
+
                     def show_taxi_info(self):
                         if len(admin_taxi_listbox.curselection()) == 0:
                             return
@@ -285,6 +298,7 @@ def main():
                             font="Calibri 15").grid(column=1, row=4, sticky="e")
                         selected_taxi_info.grab_set()
                         selected_taxi_info.mainloop()
+
                     def update_petition_info():
                         msg = dict()
                         msg["type"] = "get_status"
@@ -303,6 +317,7 @@ def main():
                                                                      pet["price"],
                                                                      pet["date"],
                                                                      pet["hour"]))
+
                     def show_petition_info(self):
                         if len(petition_list) == 0 or len(admin_petition_listbox.curselection()) == 0:
                             return
@@ -341,20 +356,24 @@ def main():
                             font="Calibri 15 bold").grid(column=0, row=6, sticky="w")
                         Label(selected_petition_info, text=petition_info["hour"],
                             font="Calibri 15").grid(column=1, row=6, sticky="e")
+
                         def update_petition(st, taxi):
                             msg = dict()
                             msg["type"] = "status_update"
                             msg["status"] = st
                             msg["taxi"] = taxi
                             response = send_msg(msg)
+
                         def accept_petition():
                             update_petition("accept", taxi_name)
                             selected_petition_info.destroy()
                             update_petition_info()
+
                         def reject_petition():
                             update_petition("reject", taxi_name)
                             update_petition_info()
                             selected_petition_info.destroy()
+
                         Button(selected_petition_info, text="Aceptar peticion",
                                 font="Calibri 15 bold", bg="#c0f9bb",
                                 command=accept_petition).grid(column=0, row=7)
@@ -483,6 +502,7 @@ def main():
                                 ui_travel_status_label.grid(column=0, columnspan=2, row=5, sticky="w")
                                 ui_travel_refresh_button = None
                                 ui_travel_close_button = None
+
                                 def refresh():
                                     msg = dict()
                                     msg["type"] = "status"
@@ -501,6 +521,7 @@ def main():
                                                                             fg="#c6311d")
                                             ui_travel_refresh_button.grid_forget()
                                             ui_travel_close_button.grid(column=2, row=5, sticky="e")
+
                                 ui_travel_refresh_button = Button(ui_travel_window,
                                                                     text="Refrescar",
                                                                     font="Calibri 15 bold",
@@ -511,10 +532,101 @@ def main():
                                                                 command=ui_travel_window.destroy)
                                 ui_travel_window.grab_set()
                                 ui_travel_window.mainloop()
+
                     user_ui_confirm_travel_button = Button(root, text="Pedir viaje",
                                                             font="Calibri 15 bold",
                                                             command=send_travel)
                     user_ui_confirm_travel_button.place(x=370, y=480)
+
+                    def user_data():
+                        user_data_ventana = Toplevel(root)
+                        user_data_ventana.title("Cambio de datos de usuario - AppTaxi")
+                        user_data_ventana.geometry("405x250")
+                        user_data_ventana.resizable(False, False)
+
+                        # Titulo ventana
+                        user_data_ventana_label = Label(user_data_ventana, text="Cambio de datos",
+                                                    font="Calibri 20 bold")
+                        user_data_ventana_label.grid(column=0, row=0)
+
+                        # Nombre
+                        user_data_ventana_label_nombre = Label(user_data_ventana, text="Nombre:",
+                                                            font="Calibri 15 bold")
+                        user_data_ventana_label_nombre.grid(column=0, row=1)
+                        user_data_ventana_entry_nombre = Entry(user_data_ventana, font="Calibri 15",
+                                                            exportselection=0)
+                        user_data_ventana_entry_nombre.grid(column=1, row=1)
+
+                        # Correo
+                        user_data_ventana_label_correo = Label(user_data_ventana, text="Correo:",
+                                                            font="Calibri 15 bold")
+                        user_data_ventana_label_correo.grid(column=0, row=2)
+                        user_data_ventana_entry_correo = Entry(user_data_ventana, font="Calibri 15",
+                                                            exportselection=0)
+                        user_data_ventana_entry_correo.grid(column=1, row=2)
+
+                        # Telefono
+                        user_data_ventana_label_telf = Label(user_data_ventana, text="Telefono:",
+                                                        font="Calibri 15 bold")
+                        user_data_ventana_label_telf.grid(column=0, row=3)
+                        user_data_ventana_entry_telf = Entry(user_data_ventana, font="Calibri 15",
+                                                        exportselection=0)
+                        user_data_ventana_entry_telf.grid(column=1, row=3)
+
+                        # Medio de pago
+                        user_data_ventana_label_pago = Label(user_data_ventana, text="nº Tarjeta:",
+                                                        font="Calibri 15 bold")
+                        user_data_ventana_label_pago.grid(column=0, row=4)
+                        user_data_ventana_entry_pago = Entry(user_data_ventana, font="Calibri 15",
+                                                        exportselection=0)
+                        user_data_ventana_entry_pago.grid(column=1, row=4)
+
+                        # Contraseña
+                        user_data_ventana_label_pwd = Label(user_data_ventana, text="Contraseña:",
+                                                        font="Calibri 15 bold")
+                        user_data_ventana_label_pwd.grid(column=0, row=5)
+                        user_data_ventana_entry_pwd = Entry(user_data_ventana, font="Calibri 15",
+                                                        exportselection=0, show="•")
+                        user_data_ventana_entry_pwd.grid(column=1, row=5)
+
+                        # Cancelar cambio de datos
+                        user_data_ventana_cerrar = Button(user_data_ventana, text="Cancelar",
+                                                    font="Calibri 15 bold",
+                                                    command=user_data_ventana.destroy)
+                        user_data_ventana_cerrar.grid(column=1, row=6)
+
+                        # Cambiar datos
+                        def cambiar():
+                            msg = dict()
+                            msg["type"] = "cambio"
+                            msg["nombre"] = user_data_ventana_entry_nombre.get()
+                            msg["mail"] = user_data_ventana_entry_correo.get()
+                            msg["tlf"] = user_data_ventana_entry_telf.get()
+                            msg["pago"] = user_data_ventana_entry_pago.get()
+                            msg["pwd"] = sha256(user_data_ventana_entry_pwd.get().encode()).hexdigest()
+
+                            if "" in msg.values():
+                                messagebox.showerror("Error", "No se han rellenado todos los campos.")
+                            else:
+                                response = send_msg(msg)
+                                if response is not None:
+                                    if response["data"] == True:
+                                        messagebox.showinfo("Información", "Se han cambiado los datos.")
+                                    else:
+                                        messagebox.showinfo("Información", "No se han podido cambiar los datos.")
+                                user_data_ventana.destroy()
+
+                        user_data_ventana_registro = Button(user_data_ventana, text="Cambiar",
+                                                    font="Calibri 15 bold", command=cambiar)
+                        user_data_ventana_registro.grid(column=0, row=6)
+
+                        user_data_ventana.grab_set()
+                        user_data_ventana.mainloop()
+
+                    user_ui_data_button = Button(root, text="Cambiar datos de usuario",
+                                                        font="Calibri 15 bold",
+                                                        command=user_data)
+                    user_ui_data_button.place(x=5, y=755)
             else:
                 messagebox.showinfo("Información", "Los credenciales no son válidos.")
 
